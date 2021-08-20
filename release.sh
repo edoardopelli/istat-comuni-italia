@@ -1,5 +1,5 @@
 #/bin/sh!
-mvn11 -B release:prepare release:perform -Pprod -Darguments="-DskipTests -Dmaven.javadoc.skip=true" 
+mvn11 -B release:prepare release:perform  -Darguments="-DskipTests -Dmaven.javadoc.skip=true" 
 if [ $? -eq 0 ]; then
 	cd target/checkout
 	export REPO=$(mvn11 -q -Dexec.executable=echo  -Dexec.args='${project.artifactId}' --non-recursive exec:exec)
