@@ -10,13 +10,19 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cheetah.istat</groupId>
-	<artifactId>regioni-api</artifactId>
+	<artifactId>istat-comuni-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>regioni-api</name>
 	<description>Regioni List</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+	<scm>
+		<url>https://edoardopelli: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@github.com/edoardopelli/istat-comuni-italia.git</url>
+		<connection>scm:git:https://edoardopelli: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@github.com/edoardopelli/istat-comuni-italia.git</connection>
+		<developerConnection>scm:git:https://edoardopelli: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@github.com/edoardopelli/istat-comuni-italia.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
