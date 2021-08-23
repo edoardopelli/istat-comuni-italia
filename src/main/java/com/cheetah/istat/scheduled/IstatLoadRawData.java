@@ -59,7 +59,7 @@ public class IstatLoadRawData {
 	@Autowired
 	private ComuniRepository comuniRepository;
 	
-	@Scheduled(cron = "0 * * * * *")
+	@Scheduled(cron = "${cron.pull.data}")
 	public void updateRegioni() throws RestClientException, URISyntaxException, ParseException {
 		int ops = 0;
 		if (LOG.isInfoEnabled()) {
